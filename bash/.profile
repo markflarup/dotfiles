@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+xset r rate 250 25
+xset b off
+
 # Configure the screens available
 if [ -f ~/shell-scripts/screen_layout.sh ]; then
   ~/scripts/screen_layout.sh
