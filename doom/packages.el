@@ -13,6 +13,7 @@
 (package! lsp-sonarlint)
 (package! dash)
 (package! ht)
+(package! titlecase)
 
 (package! github-theme)
 ;; (package! gruvbox-theme)
