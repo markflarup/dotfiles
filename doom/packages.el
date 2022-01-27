@@ -14,6 +14,7 @@
 (package! dash)
 (package! ht)
 (package! titlecase)
+(package! anki-editor)
 
 (package! github-theme)
 ;; (package! gruvbox-theme)

@@ -148,3 +148,10 @@
 
 ;; (require 'lsp-sonarlint-html)
 ;; (setq lsp-sonarlint-html-enabled t)
+
+
+(use-package anki-editor
+  :after org-noter
+  :config
+  ; I like making decks
+  (setq anki-editor-create-decks 't))
