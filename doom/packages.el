@@ -16,7 +16,7 @@
 (package! titlecase)
 (package! anki-editor)
 
-(package! github-theme)
+;; (package! github-theme)
 ;; (package! gruvbox-theme)
 
 ;; To install a package directly from a remote git repo, you must specify a
