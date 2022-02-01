@@ -125,31 +125,12 @@
   (setq lsp-gopls-complete-unimported t)
   (setq lsp-go-env '(GOFLAGS "-tags=integration")))
 
-;; DAP
-;; (use-package dap-mode
-;;   ;;:custom
-;;   ;;(dap-go-debug-program `("node" "~/extension/out/src/debugAdapter/goDebug.js"))
-;;   :config
-;;   (dap-mode 1)
-;;   (setq dap-print-io t)
-;;   ;;(setq fit-window-to-buffer-horizontally t)
-;;   ;;(setq window-resize-pixelwise t)
-;;   (require 'dap-hydra)
-;;   (require 'dap-go)		; download and expand vscode-go-extenstion to the =~/.extensions/go=
-;;   (dap-go-setup)
-;;   (use-package dap-ui
-;;     :ensure nil
-;;     :config
-;;     (dap-ui-mode 1)
-;;     )
-;;   )
-
 (use-package dap-mode
   :config
   (dap-mode 1)
   (setq dap-print-io t)
   (require 'dap-hydra)
-  (require 'dap-go); download and expand vscode-go-extenstion to the =~/.extensions/go=
+  (require 'dap-go)
   (dap-go-setup)
   (use-package dap-ui
     :ensure nil
@@ -161,12 +142,6 @@
 (add-hook 'dap-stopped-hook
           (lambda (arg) (call-interactively #'dap-hydra)))
 
-
-;; (dap-mode 1)
-
-;; (require 'dap-go)
-;; (setq lsp-lens-enable t)
-
 (setq doom-modeline-vcs-max-length 50)
 
 ;; Lookup reference fix
@@ -175,15 +150,6 @@
 ;;   (defalias '+lookup/references 'lsp-find-references))
 ;; Disable the documentation pop-up
 (setq lsp-ui-doc-enable nil)
-
-;; (require 'lsp-sonarlint)
-
-;; (require 'lsp-sonarlint-go)
-;; (setq lsp-sonarlint-go-enabled t)
-
-;; (require 'lsp-sonarlint-html)
-;; (setq lsp-sonarlint-html-enabled t)
-
 
 (use-package anki-editor
   :after org-noter
