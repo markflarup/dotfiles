@@ -15,6 +15,7 @@
 (package! ht)
 (package! titlecase)
 (package! anki-editor)
+(package! ox-jira)
 
 ;; (package! github-theme)
 ;; (package! gruvbox-theme)
