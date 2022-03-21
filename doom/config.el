@@ -81,6 +81,10 @@
   (evil-normal-state)
   (evil-write nil nil))
 
+;; Save buffers with Ctrl+S
+(global-set-key (kbd "C-s") 'normal-mode-and-save)
+(global-set-key (kbd "C-q") 'evil-quit)
+
 ;; Set shell indent to 2 spaces
 (add-hook! sh-mode
  (setq sh-basic-offset 2)
