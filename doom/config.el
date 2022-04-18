@@ -160,3 +160,16 @@
   :config
   ; I like making decks
   (setq anki-editor-create-decks 't))
+
+;; org-roam specifics:
+(use-package org-roam
+  :ensure t
+  :demand t  ;; Ensure org-roam is loaded by default
+  :init
+  (setq org-roam-v2-ack t)
+  :custom
+  (org-roam-directory "~/Dropbox/org-roam")
+  (org-roam-completion-everywhere t)
+ :config
+  (require 'org-roam-dailies) ;; Ensure the keymap is available
+  (org-roam-db-autosync-mode))
