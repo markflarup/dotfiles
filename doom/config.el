@@ -174,15 +174,15 @@
    '(
      ("d" "default" plain
       "%?"
-      :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n")
+      :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "${title}\n")
       :unnarrowed t)
      ("b" "book notes" plain
       "\n* Source\n\nAuthor: %^{Author}\nTitle: ${title}\nYear: %^{Year}\n\n* Summary\n\n%?"
-      :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n")
+      :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "${title}\n")
       :unnarrowed t)
      ("l" "programming language" plain
       "* Characteristics\n\n- Family: %?\n- Inspired by: \n\n* Reference:\n\n"
-      :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n")
+      :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "${title}\n")
       :unnarrowed t))
    )
  :config
