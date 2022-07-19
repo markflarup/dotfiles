@@ -199,3 +199,5 @@
 (map! :leader
   :desc "Insert (skipping org-capture)"
   "n r I" #'org-roam-node-insert-immediate)
+
+(setq ispell-program-name "/usr/local/bin/aspell")
