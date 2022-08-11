@@ -148,6 +148,11 @@
 
 (setq doom-modeline-vcs-max-length 50)
 
+;; https://emacs-lsp.github.io/lsp-mode/page/file-watchers/
+(with-eval-after-load 'lsp-mode
+  (add-to-list 'lsp-file-watch-ignored-directories "[/\\\\]\\moto\\'")
+  (add-to-list 'lsp-file-watch-ignored-directories "[/\\\\]\\vendor\\'"))
+
 ;; Lookup reference fix
 ;; https://github.com/hlissner/doom-emacs/issues/4894
 ;; (add-hook! lsp-mode
