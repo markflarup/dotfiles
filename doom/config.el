@@ -120,10 +120,6 @@
 ;; https://github.com/hlissner/doom-emacs/tree/develop/modules/editor/format#disabling-the-lsp-formatter
 (setq-hook! 'go-mode-hook +format-with-lsp nil)
 
-;;(add-hook! go-mode
-;;  (setq gofmt-command "goreturns")
-;;  (setq lsp-gopls-complete-unimported t))
-
 (add-hook! go-mode
   (setq gofmt-command "goimports")
   (setq lsp-gopls-complete-unimported t)
