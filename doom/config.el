@@ -188,7 +188,12 @@
      ("l" "programming language" plain
       "* Characteristics\n\n- Family: %?\n- Inspired by: \n\n* Reference:\n\n"
       :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "${title}\n")
-      :unnarrowed t))
+      :unnarrowed t)
+     ("o" "online" plain
+      "\n* Source\n\nAuthor: %^{Author}\nTitle: ${title}\nYear: %^{Year}\nURL: %^{URL}\n\n* Summary\n\n%?"
+      :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "${title}\n")
+      :unnarrowed t)
+     )
    )
  :config
   (require 'org-roam-dailies) ;; Ensure the keymap is available
