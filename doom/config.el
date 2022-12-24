@@ -207,3 +207,6 @@
   "n r I" #'org-roam-node-insert-immediate)
 
 (setq ispell-program-name "/usr/local/bin/aspell")
+
+;; yaml-pro: https://github.com/zkry/yaml-pro#installation
+(add-hook 'yaml-mode-hook #'yaml-pro-mode)
