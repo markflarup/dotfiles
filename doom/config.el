@@ -123,7 +123,8 @@
 (add-hook! go-mode
   (setq gofmt-command "goimports")
   (setq lsp-gopls-complete-unimported t)
-  (setq lsp-go-env '(GOFLAGS "-tags=integration")))
+  (setq lsp-go-env '(GOFLAGS "-tags=integration"))
+  (add-hook 'before-save-hook 'gofmt-before-save))
 
 (use-package dap-mode
   :config
