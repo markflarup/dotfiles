@@ -63,28 +63,6 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 
-;; Set cursor colors on mode change
-(unless (display-graphic-p)
-  (evil-terminal-cursor-changer-activate))
-
-(when (display-graphic-p)
-(setq evil-emacs-state-cursor '("red" box)
-    evil-normal-state-cursor '("green" box)
-    evil-visual-state-cursor '("orange" box)
-    evil-insert-state-cursor '("red" bar)
-    evil-replace-state-cursor '("red" bar)
-    evil-operator-state-cursor '("red" hollow)))
-
-(defun normal-mode-and-save ()
-  "Enter 'evil-normal-state and 'evil-write in sequence."
-  (interactive)
-  (evil-normal-state)
-  (evil-write nil nil))
-
-;; Save buffers with Ctrl+S
-(global-set-key (kbd "C-s") 'normal-mode-and-save)
-(global-set-key (kbd "C-q") 'evil-quit)
-
 ;; Set shell indent to 2 spaces
 (add-hook! sh-mode
  (setq sh-basic-offset 2)
