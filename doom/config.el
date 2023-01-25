@@ -172,7 +172,7 @@
    )
  :config
   (require 'org-roam-dailies) ;; Ensure the keymap is available
-  (org-roam-db-autosync-mode))
+)
 
 (defun org-roam-node-insert-immediate (arg &rest args)
   (interactive "P")
