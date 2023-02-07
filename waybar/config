@@ -7,6 +7,7 @@
         "tray",
         "cpu",
         "memory",
+        "hyprland/language",
         "pulseaudio",
         ],
     "modules-right": ["battery", "clock"],
@@ -27,6 +28,11 @@
         "interval": 10,
         "format": "  {}%"
     },
+	"hyprland/language": {
+		"format": "  {}",
+		"format-en": "English",
+		"format-da": "Danish"
+	},
     "memory": {
         "interval": 30,
         "format": "  {}%",
