@@ -188,3 +188,6 @@
 
 ;; yaml-pro: https://github.com/zkry/yaml-pro#installation
 (add-hook 'yaml-mode-hook #'yaml-pro-mode)
+
+;; Indicates which occurrence of the total amount is highlighted
+(setq isearch-lazy-count t)
