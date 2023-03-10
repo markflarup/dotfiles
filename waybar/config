@@ -4,13 +4,16 @@
         "wlr/workspaces",
         ],
     "modules-center": [
+        "clock",
+        "hyprland/language",
+        ],
+    "modules-right": [
         "tray",
         "cpu",
         "memory",
-        "hyprland/language",
         "pulseaudio",
+        "battery"
         ],
-    "modules-right": ["battery", "clock"],
     "sway/window": {
         "max-length": 50
     },
