@@ -21,6 +21,9 @@
         "all-outputs": true
     },
     "battery": {
+        "states": {
+            "critical": 15
+        },
         "format": "{capacity}% {icon}",
         "format-icons": ["", "", "", "", ""]
     },
