@@ -191,3 +191,9 @@
 
 ;; Indicates which occurrence of the total amount is highlighted
 (setq isearch-lazy-count t)
+
+(add-hook! 'yaml-mode-hook 'apheleia-mode)
+
+(after! apheleia
+  (setf (alist-get 'yamlfmt apheleia-formatters) '("yamlfmt" "-"))
+  (setf (alist-get 'yaml-mode apheleia-mode-alist) '(yamlfmt)))
