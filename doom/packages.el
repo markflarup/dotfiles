@@ -8,8 +8,6 @@
 
 ;; To install SOME-PACKAGE from MELPA, ELPA or emacsmirror:
 ;(package! some-package)
-(package! evil-tutor)
-(package! evil-terminal-cursor-changer)
 (package! lsp-sonarlint)
 (package! dash)
 (package! ht)
