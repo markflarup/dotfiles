@@ -197,3 +197,9 @@
 (after! apheleia
   (setf (alist-get 'yamlfmt apheleia-formatters) '("yamlfmt" "-"))
   (setf (alist-get 'yaml-mode apheleia-mode-alist) '(yamlfmt)))
+
+(use-package! org-auto-tangle
+  :defer t
+  :hook (org-mode . org-auto-tangle-mode)
+  :config
+  (setq org-auto-tangle-default t))

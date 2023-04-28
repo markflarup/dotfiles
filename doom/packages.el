@@ -14,6 +14,7 @@
 (package! titlecase)
 (package! anki-editor)
 (package! ox-jira)
+(package! org-auto-tangle)
 (package! yaml-pro)
 
 ;; https://github.com/doomemacs/doomemacs/issues/7078#issuecomment-1428775097
