@@ -188,6 +188,7 @@
   (interactive)
   (org-roam-capture- :node (org-roam-node-create)
                      :templates '(("i" "inbox" plain "* %?"
+                                   :empty-lines 1
                                   :if-new (file+head "Inbox.org" "#+title: Inbox\n")))))
 
 (global-set-key (kbd "C-c n b") #'my/org-roam-capture-inbox)
