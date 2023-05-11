@@ -184,6 +184,14 @@
   :desc "Insert (skipping org-capture)"
   "n r I" #'org-roam-node-insert-immediate)
 
+(defun my/org-roam-capture-inbox ()
+  (interactive)
+  (org-roam-capture- :node (org-roam-node-create)
+                     :templates '(("i" "inbox" plain "* %?"
+                                  :if-new (file+head "Inbox.org" "#+title: Inbox\n")))))
+
+(global-set-key (kbd "C-c n b") #'my/org-roam-capture-inbox)
+
 (setq ispell-program-name "/usr/local/bin/aspell")
 
 ;; yaml-pro: https://github.com/zkry/yaml-pro#installation
