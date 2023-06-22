@@ -16,6 +16,7 @@
 (package! ox-jira)
 (package! org-auto-tangle)
 (package! yaml-pro)
+(package! cov)
 
 ;; (package! github-theme)
 ;; (package! gruvbox-theme)
