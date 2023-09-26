@@ -36,8 +36,8 @@
     },
     "hyprland/language": {
         "format": " {}",
-        "format-en": "English",
-        "format-da": "Danish"
+        "format-en": "EN",
+        "format-da": "DA"
     },
     "memory": {
         "interval": 30,
