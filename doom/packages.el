@@ -20,7 +20,7 @@
 (package! restclient)
 
 ;; (package! github-theme)
-;; (package! gruvbox-theme)
+(package! gruvbox-theme)
 
 ;; To install a package directly from a remote git repo, you must specify a
 ;; `:recipe'. You'll find documentation on what `:recipe' accepts here:
