@@ -14,11 +14,26 @@
         "pulseaudio",
         "battery"
         ],
-    "sway/window": {
+    "hyprland/window": {
         "max-length": 50
     },
-    "sway/workspaces": {
-        "all-outputs": true
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": "{name}: {windows}",
+        "format-window-separator": " ",
+        "window-rewrite-default": "",
+        "window-rewrite": {
+            "brave-browser": "",
+            "emacs": "",
+            "firefox": "",
+            "kitty": "",
+            "outlook-hack": "󰴢",
+            "pavucontrol": "󰓃",
+            "spotify": "",
+            "slack": "󰒱"
+        },
+        "on-click": "activate"
     },
     "battery": {
         "states": {
