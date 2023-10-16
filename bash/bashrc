@@ -19,6 +19,8 @@ source /usr/share/bash-completion/bash_completion
 # and commands that start with a space:
 export HISTCONTROL="erasedups:ignorespace"
 
+export EDITOR="/usr/bin/emacsclient"
+
 # Allows the GPG Agent to ask for your password when e.g., using Sops to en- or
 # decrypt a file.
 GPG_TTY=$(tty)
