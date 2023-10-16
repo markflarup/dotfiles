@@ -1,0 +1,4 @@
+# Local test coverage file
+lcov.info
+
+*.log

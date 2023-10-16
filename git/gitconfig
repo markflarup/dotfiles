@@ -3,3 +3,5 @@
 [user]
 	email = mflarup@gmail.com
 	name = Mark Flarup-Jensen
+[core]
+	excludesfile = ~/dotfiles/git/gitignore_global
