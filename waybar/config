@@ -28,9 +28,7 @@
             "emacs": "",
             "firefox": "",
             "kitty": "",
-            "outlook-hack": "󰴢",
             "pavucontrol": "󰓃",
-            "spotify": "",
             "slack": "󰒱"
         },
         "on-click": "activate"
