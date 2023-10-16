@@ -20,3 +20,4 @@ source /usr/share/bash-completion/bash_completion
 export HISTCONTROL="erasedups:ignorespace"
 
 eval "$(starship init bash)"
+source <(oc completion bash)
