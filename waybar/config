@@ -1,11 +1,11 @@
 {
     "layer": "top",
     "modules-left": [
-        "hyprland/workspaces",
+        "hyprland/workspaces"
         ],
     "modules-center": [
         "clock",
-        "hyprland/language",
+        "hyprland/language"
         ],
     "modules-right": [
         "tray",
