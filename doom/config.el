@@ -36,6 +36,7 @@
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/Dropbox/org-files")
 
+(setq org-agenda-files '("~/Dropbox/org-roam/daily/"))
 
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
