@@ -38,7 +38,7 @@
 
 (setq org-agenda-files '("~/Dropbox/org-roam/daily/"))
 (setq org-agenda-todo-ignore-scheduled 't)
-
+(setq org-agenda-todo-ignore-deadlines 't)
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
