@@ -17,7 +17,6 @@
 (package! org-auto-tangle)
 (package! yaml-pro)
 (package! cov)
-(package! restclient)
 
 ;; (package! github-theme)
 (package! catppuccin-theme)
