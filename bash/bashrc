@@ -6,7 +6,7 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
-PATH="$HOME/.emacs.d/bin/:$PATH"
+PATH="$HOME/.config/emacs/bin/:$PATH"
 PATH="$HOME/go/bin:$PATH"
 PATH="/usr/local/bin:$PATH"
 
