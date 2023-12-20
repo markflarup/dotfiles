@@ -37,6 +37,7 @@
 (setq org-directory "~/Dropbox/org-files")
 
 (setq org-agenda-files '("~/Dropbox/org-roam/daily/"))
+(setq org-log-done 'time)
 (setq org-agenda-todo-ignore-scheduled 't)
 (setq org-agenda-todo-ignore-deadlines 't)
 
