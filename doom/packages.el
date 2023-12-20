@@ -18,6 +18,7 @@
 (package! yaml-pro)
 (package! cov)
 (package! dired-preview)
+(package! org-modern)
 
 ;; (package! github-theme)
 (package! catppuccin-theme)

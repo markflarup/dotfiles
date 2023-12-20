@@ -226,3 +226,5 @@
 ;; Enable `dired-preview-mode' in a given Dired buffer or do it
 ;; globally:
 (dired-preview-global-mode 1)
+
+(with-eval-after-load 'org (global-org-modern-mode))
