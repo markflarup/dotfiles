@@ -28,3 +28,5 @@ export GPG_TTY
 
 eval "$(starship init bash)"
 source <(oc completion bash)
+source <(kustomize completion bash)
+source <(mario completion bash)
