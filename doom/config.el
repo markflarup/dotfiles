@@ -213,3 +213,16 @@
   :hook (org-mode . org-auto-tangle-mode)
   :config
   (setq org-auto-tangle-default t))
+
+;; Dired-Preview's default values
+(setq dired-preview-delay 0.7)
+(setq dired-preview-max-size (expt 2 20))
+(setq dired-preview-ignored-extensions-regexp
+      (concat "\\."
+              "\\(mkv\\|webm\\|mp4\\|mp3\\|ogg\\|m4a"
+              "\\|gz\\|zst\\|tar\\|xz\\|rar\\|zip"
+              "\\|iso\\|epub\\|pdf\\)"))
+
+;; Enable `dired-preview-mode' in a given Dired buffer or do it
+;; globally:
+(dired-preview-global-mode 1)

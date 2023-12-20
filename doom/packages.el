@@ -17,6 +17,7 @@
 (package! org-auto-tangle)
 (package! yaml-pro)
 (package! cov)
+(package! dired-preview)
 
 ;; (package! github-theme)
 (package! catppuccin-theme)
