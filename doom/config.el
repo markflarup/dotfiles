@@ -228,3 +228,10 @@
 (dired-preview-global-mode 1)
 
 (with-eval-after-load 'org (global-org-modern-mode))
+
+(use-package! markdown
+  :ensure t
+  :mode ("README\\.md\\'" . gfm-mode)
+  :init (setq markdown-command "pandoc"))
+
+(setq markdown-split-window-direction 'right)
