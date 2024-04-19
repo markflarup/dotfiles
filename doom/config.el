@@ -235,3 +235,17 @@
   :init (setq markdown-command "pandoc"))
 
 (setq markdown-split-window-direction 'right)
+
+(defun tkj/scroll-other-pdf-window-next()
+  (interactive)
+  (let ((other-window (next-window)))
+    (if (string-match "pdf" (buffer-name (window-buffer other-window)))
+        (with-selected-window other-window
+          (pdf-view-next-page 1)))))
+
+(defun tkj/scroll-other-pdf-window-previous()
+  (interactive)
+  (let ((other-window (next-window)))
+    (if (string-match "pdf" (buffer-name (window-buffer other-window)))
+        (with-selected-window other-window
+          (pdf-view-previous-page 1)))))
