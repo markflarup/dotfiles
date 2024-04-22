@@ -1,4 +1,7 @@
-#!/usr/bin/env bash
+# ~/.bash_profile
+#
+
+[[ -f ~/.bashrc ]] && . ~/.bashrc
 
 xset r rate 250 25
 xset b off
