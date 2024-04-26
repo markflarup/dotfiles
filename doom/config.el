@@ -236,16 +236,9 @@
 
 (setq markdown-split-window-direction 'right)
 
-(defun tkj/scroll-other-pdf-window-next()
-  (interactive)
-  (let ((other-window (next-window)))
-    (if (string-match "pdf" (buffer-name (window-buffer other-window)))
-        (with-selected-window other-window
-          (pdf-view-next-page 1)))))
-
-(defun tkj/scroll-other-pdf-window-previous()
-  (interactive)
-  (let ((other-window (next-window)))
-    (if (string-match "pdf" (buffer-name (window-buffer other-window)))
-        (with-selected-window other-window
-          (pdf-view-previous-page 1)))))
+;; Doomifies Karthink's remapping:
+;; https://fosstodon.org/@karthink/112323565881362333
+(map! :after pdf-view
+      :map pdf-view-mode-map
+      "<remap> <scroll-up-command>" #'pdf-view-scroll-up-or-next-page
+      "<remap> <scroll-down-command>" #'pdf-view-scroll-down-or-previous-page)
