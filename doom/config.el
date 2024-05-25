@@ -242,3 +242,8 @@
       :map pdf-view-mode-map
       "<remap> <scroll-up-command>" #'pdf-view-scroll-up-or-next-page
       "<remap> <scroll-down-command>" #'pdf-view-scroll-down-or-previous-page)
+
+;; https://docs.doomemacs.org/v21.12/#/description/hacks
+(after! elfeed
+  (setq elfeed-search-filter "@1-month-ago +unread")
+  (setq rmh-elfeed-org-files '("~/dotfiles/doom/elfeed.org")))

@@ -1,0 +1,13 @@
+#+title: Elfeed
+
+* root :elfeed:
+** Programming :programming:
+*** [[https://go.dev/blog/feed.atom][The Go Blog]] :go:
+
+** Tools
+*** https://github.com/curl/curl/releases.atom :curl:
+*** https://sachachua.com/blog/category/emacs-news/feed/index.xml :emacs:
+
+# ** News :news:
+# *** Top news :tops:
+# **** http://feeds.bbci.co.uk/news/rss.xml
