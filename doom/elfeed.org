@@ -8,6 +8,6 @@
 *** https://github.com/curl/curl/releases.atom :curl:
 *** https://sachachua.com/blog/category/emacs-news/feed/index.xml :emacs:
 
-# ** News :news:
-# *** Top news :tops:
-# **** http://feeds.bbci.co.uk/news/rss.xml
+** DevOps
+*** [[https://itrevolution.com/feed/?post_type=article][ITRevolution]] :devops:
+*** [[https://devops.com/feed/][DevOps.com]] :devops:
