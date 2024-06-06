@@ -7,7 +7,11 @@
 ** Tools
 *** https://github.com/curl/curl/releases.atom :curl:
 *** https://sachachua.com/blog/category/emacs-news/feed/index.xml :emacs:
+*** [[https://tracker.orgmode.org/index.rss][OrgMode]] :org:
 
 ** DevOps
 *** [[https://itrevolution.com/feed/?post_type=article][ITRevolution]] :devops:
 *** [[https://devops.com/feed/][DevOps.com]] :devops:
+
+** News
+*** [[https://www.bleepingcomputer.com/feed/][Bleeping Computer]] :news:
